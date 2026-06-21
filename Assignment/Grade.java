@@ -1,32 +1,32 @@
-package Assignment;
 import java.util.Scanner;
 
-
-public class Score {
-    
-
-
+public class Grade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ask for the student's score
+        // Ask the user for a score
         System.out.print("Enter the student's score: ");
         int score = scanner.nextInt();
 
-        // Determine grade based on score
+        // Decide the grade based on the score
+        char grade;
         if (score >= 90) {
-            System.out.println("Grade: A");
+            grade = 'A';
         } else if (score >= 80) {
-            System.out.println("Grade: B");
+            grade = 'B';
         } else if (score >= 70) {
-            System.out.println("Grade: C");
+            grade = 'C';
         } else if (score >= 60) {
-            System.out.println("Grade: D");
+            grade = 'D';
         } else {
-            System.out.println("Grade: F");
+            grade = 'F';
         }
+
+        // Show the result
+        System.out.println("The grade is: " + grade);
 
         scanner.close();
     }
 }
+
 

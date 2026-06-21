@@ -4,8 +4,7 @@ public class Task2 {
         byte h = 72;          // ASCII for 'H'
         int three = 3;
         int one = 1;
-        int zero = 0;
-        short two = 2;
+        short zero = 0;
         float f = 2.0f;
         boolean bool = true;
         char space = ' ';
