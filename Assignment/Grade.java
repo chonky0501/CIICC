@@ -4,11 +4,11 @@ public class Grade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ask the user for a score
+        // Enter a score
         System.out.print("Enter the student's score: ");
         int score = scanner.nextInt();
 
-        // Decide the grade based on the score
+        // grade based on the score
         char grade;
         if (score >= 90) {
             grade = 'A';
@@ -22,7 +22,7 @@ public class Grade {
             grade = 'F';
         }
 
-        // Show the result
+        // result
         System.out.println("The grade is: " + grade);
 
         scanner.close();
