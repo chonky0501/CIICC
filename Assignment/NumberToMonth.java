@@ -10,7 +10,7 @@ class NumberToMonth {
         
         int days;
         
-        //1=January (31=days)
+        //1=January (31=days)...
         switch (month) {
             case 1:  
             case 3:  
