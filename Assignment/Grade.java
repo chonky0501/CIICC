@@ -4,7 +4,7 @@ public class Grade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Enter a score
+        // Enter score
         System.out.print("Enter the student's score: ");
         int score = scanner.nextInt();
 
