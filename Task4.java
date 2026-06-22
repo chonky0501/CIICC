@@ -1,15 +1,22 @@
+import java.util.Scanner;
+
 public class Task4 {
-    public static void main(String[] args) {
-        String input = "madam"; // you can change this to test other strings
+    static void main() {
+        Scanner scanner = new Scanner(System.in);
 
-        // Reverse the string using StringBuilder
-        String reversed = new StringBuilder(input).reverse().toString();
+        System.out.print("Enter a word: ");//user input
+        String word = scanner.nextLine();
 
-        // Compare input and reversed string
-        if (input.equals(reversed)) {
-            System.out.println("The input string is a palindrome.");
-        } else {
-            System.out.println("The input string is not a palindrome.");
+        StringBuilder sb = new StringBuilder(word);//insert user input in SB
+
+        sb.reverse();//reverse the word
+        String reversedWord = sb.toString();//convert the SB into a string
+
+        if(word.equals(reversedWord)){
+            System.out.println("The input string is a palindrome");
+        }
+        else {
+            System.out.println("The input string is NOT a palindrome");
         }
     }
 }
